@@ -1,8 +1,11 @@
+import Navbar from "../Navbar";
+
 export default function Container({ children }) {
   return (
     <>
-      <div className="container-fluid">
-        <div className="row row-cols-lg-6 g-lg-3">{children}</div>
+      <Navbar />
+      <div className="container">
+        <div className="row row-cols-lg-5">{children}</div>
       </div>
     </>
   );
